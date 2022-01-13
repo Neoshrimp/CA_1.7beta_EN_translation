@@ -3,7 +3,7 @@
 		"_gdeType_Name": "String",
 		"Name": "strange jar",
 		"_gdeType_Desc": "String",
-		"Desc": "Transforms an item into a better item.\r\n<b>(Potion -> Key -> Artifact ->\r\nActive Item -> Unique Equipment)\r</b>",
+		"Desc": "Transforms an item into a better item.\r\n<b>(Potion -> Key -> Artifact ->\r\nActive Item -> <color=#F53172FF>Unique Equipment</color>)\r</b>",
 		"_gdeType_Script": "String",
 		"Script": "RE_BigJar",
 		"UseButton": [
@@ -20,7 +20,7 @@
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeIsList_DisableBackButton": 0,
-		"EventDetails": "A strange pot with an invisible inside.\r\nI think I can put something in there.\r\n(Potion -> Key -> Relic -> Active Item -> Unique Equipment)",
+		"EventDetails": "A strange pot with an invisible inside.\r\nI think I can put something in there.\r\n(Potion -> Key -> Relic -> Active Item -> <color=#F53172FF>Unique Equipment</color>)",
 		"_gdeType_EventDetails": "String",
 		"_gdeIsList_EventDetails": 0,
 		"OrderStrings": [
@@ -59,7 +59,7 @@
 	},
 	"RE_BlackSmith": {
 		"_gdeType_Name": "String",
-		"Name": "shabby blacksmith",
+		"Name": "shabby forge",
 		"_gdeType_Desc": "String",
 		"Desc": "Smelt <b>equipment, relics, and active items</b> to transform them into <b>other items of the same type</b>.",
 		"_gdeType_Script": "String",
@@ -78,7 +78,7 @@
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeIsList_DisableBackButton": 0,
-		"EventDetails": "It is a forge that is all crumbling down.\nThe anvil and hammer are rusty, but it looks like they can still be used.",
+		"EventDetails": "It's a forge that's all crumbling down.\nThe anvil and hammer are rusty, but it looks like they can still be used.",
 		"_gdeType_EventDetails": "String",
 		"_gdeIsList_EventDetails": 0,
 		"OrderStrings": [
@@ -235,7 +235,7 @@
 		"_gdeType_Name": "String",
 		"Name": "garden of keys",
 		"_gdeType_Desc": "String",
-		"Desc": "All allies take a small amount of damage.\r\nAfter that, choose one of the following and get it.\r\n<b> (1 key, or 1 skill book + 200 gold)\r</b>",
+		"Desc": "All allies take a small amount of damage.\r\nAfter that, choose one of the following and acquire it.\r\n<b> (1 key, or 1 skill book + 200 gold)\r</b>",
 		"_gdeType_Script": "String",
 		"Script": "RE_KeyGarden",
 		"UseButton": [
@@ -364,7 +364,7 @@
 		"Script": "RE_GoldenOven",
 		"_gdeIsList_UseButton": 1,
 		"_gdeType_UseItemSlot": "Int",
-		"UseItemSlot": 0,
+		"UseItemSlot": 1,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
 			"bake bread",
@@ -400,7 +400,7 @@
 		"SpecialAppearance": 0,
 		"_gdeType_ItemSlotView": "Bool",
 		"_gdeIsList_ItemSlotView": 0,
-		"ItemSlotView": 0,
+		"ItemSlotView": true,
 		"EventFieldObject_2Stage": "FieldObject/RD2/GoldenOven2",
 		"_gdeType_EventFieldObject_2Stage": "GameObject",
 		"_gdeIsList_EventFieldObject_2Stage": 0,
@@ -416,7 +416,7 @@
 	},
 	"RE_SwordSanctuary": {
 		"_gdeType_Name": "String",
-		"Name": "sanctuary of swords",
+		"Name": "Sanctuary of the Sword",
 		"_gdeType_Desc": "String",
 		"Desc": "<b>Instead of acquiring 'Sword of the Forest'</b>, the boss of this stage is changed to <b>'Sir Dortsch'</b>.",
 		"_gdeType_Script": "String",
@@ -453,7 +453,7 @@
 		"_gdeIsList_RareEvent": 0,
 		"_gdeType_SpecialAppearance": "Bool",
 		"_gdeIsList_SpecialAppearance": 0,
-		"SpecialAppearance": 0,
+		"SpecialAppearance": true,
 		"_gdeType_ItemSlotView": "Bool",
 		"_gdeIsList_ItemSlotView": 0,
 		"ItemSlotView": true,
@@ -472,9 +472,9 @@
 	},
 	"RE_FountainOblivion": {
 		"_gdeType_Name": "String",
-		"Name": "Fountain of Oblivion",
+		"Name": "fountain of wishes",
 		"_gdeType_Desc": "String",
-		"Desc": "You can forget the Lucy skill <b>'Acceleration'</b> and acquire something else.\r\n<b> (Available only if you have successfully entered 'Blood Park' in the previous round)\r</b>",
+		"Desc": "",
 		"_gdeType_Script": "String",
 		"Script": "RE_FountainOblivion",
 		"_gdeIsList_UseButton": 1,
@@ -487,19 +487,19 @@
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "In front of you is a wide spring.\nAn unknown voice is heard from the river.\n\"what do you want?\"",
+		"EventDetails": "It is a magical fountain that is said to make wishes come true.\r\nAs I get closer, Sam's will speaks to me.\r\n\r\n“You still don’t have enough vessels to fulfill your wish.\r\nRight now, I can only grant very weak wishes.\"\n<b>(Enter 'Blood Park' and prove your strength)</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"Lucy's skill 'Acceleration' is lost. Select and learn 1 out of 4 other Lucy Rare Skills.",
-			"Lucy's skill 'Acceleration' is lost. Get an Infinite Skillbook and a Celestial.",
-			"Lucy's skill 'Acceleration' is lost. Choose one of the 4 artifacts.",
-			"Get a Healing Essential Skillbook.",
-			"Get one key.",
-			"Lucy's skill 'Acceleration' is lost. Get a golden apple.",
-			"Lucy's skill 'Acceleration' is lost. Obtained by choosing 1 out of 3 random active items.",
-			"Now there is nothing to see here.",
-			"No voice is heard from Sam.\n*You must enter the Blood Park in the previous round to activate it."
+			"You lose Lucy's skill 'Acceleration', and you gain it by selecting one of 4 other Lucy's rare skills.",
+			"You lose Lucy's skill 'Acceleration', and you get one infinite skill book and one Celestial.",
+			"Lucy's skill 'Acceleration' is lost, and it is obtained by selecting 1 out of 4 relics.",
+			"Skill Book - Get 1 Healing Stone.",
+			"Get 1 key.",
+			"Lucy loses 'Acceleration' and gains 1 golden apple.",
+			"Lucy's skill 'Acceleration' is lost, and it is obtained by selecting 1 of 3 active items.",
+			"When the wish is realized, the light disappears from the fountain that has fulfilled its role.\r\nThe voice is no longer heard.",
+			"It is a magical fountain that is said to make wishes come true.\r\nAs I get closer, Sam's will speaks to me.\r\n\r\n\"You are well-deserved to make wishes come true.\r\nBut remember. The stronger the wish, the higher the price...\""
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -533,7 +533,7 @@
 		"_gdeType_Name": "String",
 		"Name": "The Alchemist's House",
 		"_gdeType_Desc": "String",
-		"Desc": "Obtain 1 <b>Random Potion</b>.\r\nUsing the key, you can additionally obtain <b>1 random potion and high-grade equipment</b>.",
+		"Desc": "Obtain 1 <b>Random Potion</b>.\r\nYou can use the key to additionally obtain <b>1 random potion and <color=#A3C52FFF>Advanced grade</color> equipment</b>.",
 		"_gdeType_Script": "String",
 		"Script": "RE_AlchemistHouse",
 		"_gdeIsList_UseButton": 1,
@@ -557,7 +557,7 @@
 			"The search was successfully completed.\r\nIt looks like you got everything you could get here.",
 			"I found a potion that looked useful in a dusty place.\r\nIf you open the basement door, you can explore even deeper...",
 			"go down to the basement",
-			"Use the key to get 1 random potion and 1 high-grade gear item"
+			"Use the key to get 1 random potion and 1 <color=#A3C52FFF>Advanced Grade</color> equipment item"
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -609,7 +609,9 @@
 		"EventDetails": "You can grant beneficial enchantments to equipment items.\r\nYou can use &a more times.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
-		"OrderStrings": [],
+		"OrderStrings": [
+			"Unable to withstand the overheating of magic power, the table broke.\nI don't think it can be used anymore."
+		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/Stage1/enchanttable1(example)",
@@ -665,7 +667,8 @@
 			"The book begins to unfold, shining brightly as if satisfied.\r\nA mysterious power is felt from the book.",
 			"strengthen skills",
 			"Sacrifice skill once again",
-			"After completing the role, the book returned to its original form."
+			"After completing the role, the book returned to its original form.",
+			"Choose a skill to sacrifice"
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -699,7 +702,7 @@
 		"_gdeType_Name": "String",
 		"Name": "the ordeal of time",
 		"_gdeType_Desc": "String",
-		"Desc": "If you clear the battle of this stage boss within the specified time, you will receive an additional reward.",
+		"Desc": "During the boss battle of this stage, <b>Time limit</b> is applied. If you clear within the specified time, you will receive an additional reward.",
 		"_gdeType_Script": "String",
 		"Script": "RE_TrialOfTime",
 		"_gdeIsList_UseButton": 1,
@@ -708,20 +711,22 @@
 		"_gdeType_UseButton": "String",
 		"UseButton": [
 			"general ordeal",
-			"hard ordeal"
+			"Greater Trial"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
 			"",
-			"20% less time compared to normal"
+			"20% less time limit compared to normal trials"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "If you clear the battle of this stage boss within the specified time, you will receive an additional reward.",
+		"EventDetails": "The clock emblem, which symbolizes time, shines flexibly.\r\nLet's prove our competence by facing trials.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
-		"OrderStrings": [],
+		"OrderStrings": [
+			"The ordeal of time has begun.\nLet's prepare thoroughly and take on the ordeal."
+		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/Trial/ordeal_example_time1",
@@ -754,7 +759,7 @@
 		"_gdeType_Name": "String",
 		"Name": "garden cemetery",
 		"_gdeType_Desc": "String",
-		"Desc": "Obtain 1 <b>Cursed Equipment Item</b> or <b>Lucy's Curse Skill</b> and obtain <b>Gold</b>.",
+		"Desc": "<b>Acquire 1 Cursed <color=#A3C52FFF>Advanced Grade</color>Equipment Item</b>, or <b>Lucy's Curse Skill</b> and <b>Gold</b> > is obtained.",
 		"_gdeType_Script": "String",
 		"Script": "RE_Gardencemetery",
 		"_gdeIsList_UseButton": 1,
@@ -768,7 +773,7 @@
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"Acquire 1 Cursed Equipment",
+			"Acquire 1 Cursed <color=#A3C52FFF>Advanced Grade</color> Equipment",
 			"Get Lucy Curse skill and get gold"
 		],
 		"_gdeType_DisableBackButton": "Bool",
@@ -866,7 +871,7 @@
 		"_gdeType_Name": "String",
 		"Name": "maid's house",
 		"_gdeType_Desc": "String",
-		"Desc": "<b>Battle with elite monsters</b>.\nWhen you win, you receive a special reward.\r\n<b>(Reward: Skill Book - Healing Stone x2)\r</b>",
+		"Desc": "<b>Battle with elite monsters</b>.\nWhen you win, you receive a special reward.\r\n<b> (Fixed reward: skill book - the essence of healing)\r</b>",
 		"_gdeType_Script": "String",
 		"Script": "RE_MaidsHouse",
 		"_gdeIsList_UseButton": 1,
@@ -1044,7 +1049,7 @@
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"Enhances 1 ally's skill, reduces MAX HP by 4"
+			"Enhances one ally's skill, reduces MAX HP by 4"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
@@ -1053,9 +1058,11 @@
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
 			"As the skill was strengthened, an unidentified smoke suddenly flowed out from the inside of the safe.\nI hurriedly shut my mouth, but it seems it's too late...",
-			"I saw something terrible in the safe that I shouldn't have seen...",
+			"I saw something terrible that shouldn't have been seen in the safe...",
 			"Reduces the master's max HP by 4",
-			"Acquire Lucy Curse Skill"
+			"Acquire Lucy Curse Skill",
+			"Please select a skill, and the option to enhance the corresponding skill will appear. (When strengthening, the selected character's maximum HP is -4)",
+			"Max Health -4"
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1106,19 +1113,19 @@
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "It is the remains of a ruined library.\r\nFew books remain that can be read completely.",
+		"EventDetails": "It is a treasure trove of knowledge that has been preserved from general books to forbidden books.\r\nBooks can be borrowed freely.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
 			"Use the key to open the door.",
-			"When I pulled out the book, an old bookshelf fell like a collapsing, and a hidden door appeared from the back.\r\nIf you have the key, you can go even deeper into the library.",
-			"I found an undamaged book inside.\nThe moment I pulled out the book, the library began to shake, and I managed to get out before it collapsed."
+			"Through the tightly lined bookshelves, the door leading down to the basement library came into view.\r\nThere may be rare books that are not found on earth.",
+			"I was able to obtain a useful book from the basement library.\r\nBe sure to return the borrowed book to its original place later.\r."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/construction_site",
 		"_gdeType_EventFieldObject": "GameObject",
-		"EventFieldObject": "",
+		"EventFieldObject": "FieldObject/RD1/Library",
 		"_gdeSchema": "RandomEvent",
 		"RareEvent": true,
 		"_gdeType_RareEvent": "Bool",
@@ -1214,12 +1221,14 @@
 		"EventDetails": "It is a potion cafe where various scents are gathered and harmonized.\r\nIt seems that several potions are left unattended on the shelves.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
-		"OrderStrings": [],
+		"OrderStrings": [
+			"After taking some potions that looked useful, the shelves quickly ran out.\r\nThere doesn't seem to be any more to see."
+		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/construction_site",
 		"_gdeType_EventFieldObject": "GameObject",
-		"EventFieldObject": "",
+		"EventFieldObject": "FieldObject/RD1/PotionCafe",
 		"_gdeType_RareEvent": "Bool",
 		"RareEvent": true,
 		"_gdeSchema": "RandomEvent",
@@ -1254,22 +1263,24 @@
 		"UseItemSlot": 0,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
-			"use"
+			"Buy a key (400 gold)"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "You can buy a key for 400 gold. (up to 2)\n&a available for purchase",
+		"EventDetails": "A scarecrow merchant is selling keys.\r\nHere, it seems that you can purchase it at a cheaper price than in a normal store.\r\n\n(Remaining key stock: &a)",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
-		"OrderStrings": [],
+		"OrderStrings": [
+			"A scarecrow that has filled its sales quota shakes its body happily.\r\nIt doesn't seem to be available for purchase anymore."
+		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/construction_site",
 		"_gdeType_EventFieldObject": "GameObject",
-		"EventFieldObject": "",
+		"EventFieldObject": "FieldObject/RD1/KeyScarecrow",
 		"_gdeType_RareEvent": "Bool",
 		"RareEvent": 0,
 		"_gdeSchema": "RandomEvent",
@@ -1296,7 +1307,7 @@
 		"_gdeType_Name": "String",
 		"Name": "fountain of purification",
 		"_gdeType_Desc": "String",
-		"Desc": "<b>Remove all Curse</b> of the equipment you are wearing and <b>Lucy's Curse skill</b>. If you succeed in removing even one, you get <b>200 gold</b>.",
+		"Desc": "<b>Remove all the curses</b> and <b>Lucy's curse skills</b>. If you succeed in removing even one, you get <b>200 gold</b>.",
 		"_gdeType_Script": "String",
 		"Script": "RE_LucyCurseRemover",
 		"_gdeIsList_UseButton": 1,
@@ -1309,7 +1320,7 @@
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"Removes all Curse and Lucy Curse skills from the equipment you are wearing"
+			"Removes all Curse and Lucy Curse skills from all equipment"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
@@ -1350,7 +1361,7 @@
 		"_gdeType_Name": "String",
 		"Name": "trial of strength",
 		"_gdeType_Desc": "String",
-		"Desc": "Pay 500 gold and try the ordeal\nThe higher the damage, the better the rewards.",
+		"Desc": "Pay 500 gold and try the ordeal.\nThe higher the damage, the better the rewards.",
 		"_gdeType_Script": "String",
 		"Script": "RE_TrialofStrength",
 		"_gdeIsList_UseButton": 1,
@@ -1358,18 +1369,18 @@
 		"UseItemSlot": 3,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
-			"Challenge (costs 500 gold)"
+			"Challenging the ordeal (costs 500 gold)"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "prove it through trials\nDepending on the amount of damage dealt, one of the following rewards can be obtained.",
+		"EventDetails": "The sword's crest, which symbolizes power, is shining sharply.\r\nLet's prove our competence by facing trials.\r\n\n(List of rewards according to the amount of damage dealt)",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"End"
+			"The trial of strength has ended.\nHe obtained a reward commensurate with the strength he showed from the ordeal."
 		],
 		"DisableBackButton": false,
 		"_gdeType_MainImage": "Sprite",
@@ -1446,7 +1457,7 @@
 		"_gdeType_Name": "String",
 		"Name": "abandoned warehouse",
 		"_gdeType_Desc": "String",
-		"Desc": "Acquire 3 <b>'Scrap Steel'</b> that can be used in crafting. In addition, by using a key or receiving a curse, you get 2 'Useful Scrap'</b> with a higher grade.",
+		"Desc": "Acquire 3 <b>'Scrap Steel'</b> that can be used in crafting. In addition, by using a key or receiving a curse, 2 <b>'Useful Scrap'</b> of <color=#A3C52FFF>Advanced Grade</color> are acquired.",
 		"_gdeType_Script": "String",
 		"Script": "RE_abandonedwarehouse",
 		"_gdeIsList_UseButton": 1,
@@ -1463,13 +1474,13 @@
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "Abandoned warehouse that smells like rusty iron.\r\nA lot of waste is mixed up and left unattended.",
+		"EventDetails": "Abandoned warehouse that smells like rusted iron.\r\nA lot of waste is mixed up and left unattended.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
 			"I found some scrap metal that I thought could be used, and put it in my bag.\r\nThere is still a locked iron door inside the warehouse.",
 			"open the door with the key",
-			"Inside the door is some scrap metal in better condition.\r\nI picked up the scrap metal until the bag was full.",
+			"Inside the door, there are scrap metals in slightly better condition.\r\nI picked up the scrap metal until the bag was full.",
 			"force the door open",
 			"Consumes 1 key, acquires 2 useful scrap metal",
 			"Acquire Lucy's curse skill 'Heavy Backpack' and acquire 2 pieces of usable scrap metal"
@@ -1478,7 +1489,7 @@
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "Image/ObjectImage/construction_site",
 		"_gdeType_EventFieldObject": "GameObject",
-		"EventFieldObject": "",
+		"EventFieldObject": "FieldObject/RD1/Warehouse",
 		"_gdeType_RareEvent": "Bool",
 		"RareEvent": true,
 		"_gdeType_SpecialAppearance": "Bool",
@@ -1499,7 +1510,7 @@
 		"_gdeType_Name": "String",
 		"Name": "safe of time",
 		"_gdeType_Desc": "String",
-		"Desc": "Select 1 item and grant <b>Preservation Function</b>.\n<b>If the party is annihilated</b>, you can start with the items you saved in the next round. Enchantments or curses are not maintained.",
+		"Desc": "Select 1 item and grant <b>Preservation Function</b>.\n<b>If the party is annihilated</b>, you can start with the items you saved in the next round. Enchantments or curses of equipment items are not maintained.",
 		"_gdeType_Script": "String",
 		"Script": "RE_TimeVault",
 		"_gdeIsList_UseButton": 1,
@@ -1507,20 +1518,20 @@
 		"UseItemSlot": 1,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
-			"Add preservation function to equipment"
+			"Add preservation function to items"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"When annihilated, start with the item in the next round (Enchantment or curse is not maintained)"
+			"When annihilated, start with the item in the next round (Equipment's enchantment or curse is not maintained)"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "It is a safe with a mechanical feel that resembles a clock.\nI think you can put your gear in the safe.",
+		"EventDetails": "It is a safe with a mechanical feel that resembles a clock.\nI think I could put something in the safe.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"The equipment has been safely preserved.\nWhen the function is finished, the safe is closed and can no longer be opened."
+			"The item has been safely preserved.\nWhen the function is finished, the safe is closed and can no longer be opened."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1563,12 +1574,12 @@
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "Inside the store, a strange-looking clown greets customers.\r\nThe stand shows the prepared items and starts the business.\n\"Welcome. How about something like this?\"",
+		"EventDetails": "Inside the store, a strange-looking clown greets customers.\r\nThe stand shows the prepared items and starts the business.\n<b>\"Welcome. How about something like this?\"</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"The clown pondered for a moment, then pulled out another object and showed it.\n\"Then how about this one?\"",
-			"\"Thank you for your purchase. Whoops...\"\nThe clown smiled contentedly, took the gold and disappeared."
+			"The clown pondered for a moment, then pulled out another object and showed it.\n<b>\"Then how about this page?\"</b>",
+			"<b>\"Thank you for purchasing. Whoops...\"</b>\nThe clown smiled contentedly, took the gold and disappeared."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1610,17 +1621,19 @@
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "It is a casino building covered in dazzling neon signs.\r\nThe laughter of clowns can be heard from inside.",
+		"EventDetails": "It is a casino building covered in dazzling neon signs.\r\nThe laughter of clowns can be heard from inside.\n\n<b>\"Put money and eat money! Why don't you try to make a fortune?\"</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
-		"OrderStrings": [],
+		"OrderStrings": [
+			"As the roulette closes, the laughter disappears, and a creepy stillness arrives.\r\nThe door no longer opens."
+		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
 		"MainImage": "",
 		"_gdeType_EventFieldObject": "GameObject",
 		"EventFieldObject": "",
 		"_gdeType_RareEvent": "Bool",
-		"RareEvent": 0,
+		"RareEvent": true,
 		"_gdeType_SpecialAppearance": "Bool",
 		"SpecialAppearance": 0,
 		"_gdeType_ItemSlotView": "Bool",
@@ -1699,11 +1712,11 @@
 		"UseButtonTooltip": [],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "Inside the theater, a magician clown is preparing a magic trick.\r\n\n“Welcome to the magic show!\nShow me the artifact, and I'll show you some amazing magic.\"",
+		"EventDetails": "Inside the theater, a magician clown is preparing a magic trick.\r\n\n<b>\"Welcome to the magic show!\nShow me the artifact, and I'll show you some amazing magic.\"</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"“Wow, my God! The artifact turned into what you were hoping for in an instant. Whoops... ”\r\nThe magician handed the reversed item and disappeared somewhere with black smoke."
+			"<b>\"Wow, my God!\nThe Artifact turned into something you were looking for in an instant. Whoops... \"</b>\n\nThe magician handed the reversed item and disappeared somewhere with black smoke..."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1749,12 +1762,12 @@
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "A lottery place for clowns where you can get prizes through a lottery.\nAs you get closer, the soliciting clown reveals an unpleasant smile.\n\n\"Heh, do you want to run a lottery? Then give me a ticket.\nwhat is a ticket? A long, hard stick. It's something that can open anything.\"",
+		"EventDetails": "A lottery place for clowns where you can get prizes through a lottery.\nAs you get closer, the soliciting clown reveals an unpleasant smile.\n\n<b>\"Heh, do you want to run a lottery? Then give me a ticket.\nwhat is a ticket? A long, hard stick. Something that can open anything.\"</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
 			"I obtained the artifact that came out as a gift.\nThere doesn't seem to be anything to see here anymore.",
-			"\"Hey! What are you doing now!?\"\nI was caught by a clown while trying to get a free gift without a ticket.\nShe managed to get the prize and barely managed to escape, but somehow things seem to have gotten worse.\r..."
+			"<b>\"Hey! What are you doing!?\"</b>\n\nI was caught by a clown while trying to get a free gift without a ticket.\nShe managed to get the prize and barely managed to escape, but somehow things seem to have gotten worse..."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1781,7 +1794,7 @@
 		"_gdeType_Name": "String",
 		"Name": "black market",
 		"_gdeType_Desc": "String",
-		"Desc": "You can purchase rare skills or enhancements with soul stones.",
+		"Desc": "By paying a soul stone, you can purchase <b>rare skills</b> or enhance <b>skills</b> for investigators or Lucy.",
 		"_gdeType_Script": "String",
 		"Script": "RE_BlackMarket",
 		"_gdeIsList_UseButton": 1,
@@ -1789,23 +1802,23 @@
 		"UseItemSlot": 0,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
-			"After checking the rare skill of an investigator, purchase one with 3 soul stones.",
-			"After checking Lucy's skill, purchase one with 3 soul stones.",
-			"Consumes 1 Spirit Stone, strengthens 1 skill"
+			"Check and purchase rare skills of the investigator (3 soul stones)",
+			"Check and purchase Lucy's rare skill (3 soul stones)",
+			"Enhance 1 skill (1 soul stone)"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"Soulstones are not consumed even if you check the skill.",
-			"Soulstones are not consumed even if you check the skill."
+			"Soulstone is not consumed even if you check the skill",
+			"Soulstone is not consumed even if you check the skill"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "",
+		"EventDetails": "It is a mysterious black market that is operated by occupying an abandoned bunker.\r\nAs I stand in front of the door, the surveillance camera moves, and someone's voice is heard from the speaker.\r\n\r\n<b>\"What's wrong with a kid like you?\r\n… Well, as long as you have the soul stone, it doesn't matter. Take a look around.\"</b>",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"End"
+			"<b>\"Okay. I'm sure you got the money.\"</b>\n\nThe unknown merchant smiled contentedly, took her soul stone, and paid for her purchase.\r\nShe knocked on the iron door again, but there was no sound.\r..."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1832,7 +1845,7 @@
 		"_gdeType_Name": "String",
 		"Name": "garbage dump",
 		"_gdeType_Desc": "String",
-		"Desc": "Get a random unique grade equipment item and a Lucy Curse skill, or get 3 random scrolls.",
+		"Desc": "Get 1 random <b><color=#F53172FF>unique grade gear</color></b> and get 1 <b>Lucy Curse Skill</b>, or a random <b>scroll</b> > Get 3",
 		"_gdeType_Script": "String",
 		"Script": "RE_GarbageDump",
 		"_gdeIsList_UseButton": 1,
@@ -1840,22 +1853,23 @@
 		"UseItemSlot": 0,
 		"_gdeType_UseButton": "String",
 		"UseButton": [
-			"look through trash",
-			"Look at the abolitionists"
+			"look for trash",
+			"look at the abolition"
 		],
 		"_gdeIsList_UseButtonTooltip": 1,
 		"_gdeType_UseButtonTooltip": "String",
 		"UseButtonTooltip": [
-			"Random unique grade equipment acquisition, Lucy curse skill 'Banana Peel' acquired",
+			"Random <color=#F53172FF>Unique grade</color> equipment acquired, Lucy curse skill 'Banana Peel' acquired",
 			"Get 3 random scrolls"
 		],
 		"_gdeType_DisableBackButton": "Bool",
 		"_gdeType_EventDetails": "String",
-		"EventDetails": "",
+		"EventDetails": "It is a facility that collects and disposes of all the garbage in Blood Park.\r\nJust being nearby makes me nauseous, but maybe I can find something useful.",
 		"_gdeIsList_OrderStrings": 1,
 		"_gdeType_OrderStrings": "String",
 		"OrderStrings": [
-			"There doesn't seem to be any more to be found here."
+			"As a result of enduring the disgust and rummaging through the garbage heap, he was able to obtain useful equipment. But even if I wash it for a while, this stench doesn't seem to go away...",
+			"I don't really have the courage to find the garbage heap myself. Instead, after searching for a relatively clean looking scrap of paper nearby, I was able to get a few scrolls that were still usable."
 		],
 		"DisableBackButton": 0,
 		"_gdeType_MainImage": "Sprite",
@@ -1868,6 +1882,315 @@
 		"SpecialAppearance": 0,
 		"_gdeType_ItemSlotView": "Bool",
 		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_Devilsbeacon": {
+		"_gdeType_Name": "String",
+		"Name": "devil's beacon",
+		"_gdeType_Desc": "String",
+		"Desc": "<color=#1681F3FF>Rare</color> or higher equipment is cursed, and you get 2 skillbooks or 1 key.",
+		"_gdeType_Script": "String",
+		"Script": "RE_Devilsbeacon",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 1,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"use purple flames",
+			"use black flame"
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [
+			"<color=#1681F3FF>Rare level</color> or higher Cursed equipment and acquire 2 skill books",
+			"Curse one piece of equipment with <color=#1681F3FF>Rare level</color> or higher and obtain a key"
+		],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "It is a beacon with an ominous flame burning.\r\nYou can feel the powerful curse energy just by getting close.\r\nI think I could do something by heating the equipment in flames.",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"As soon as the equipment is put into the beacon, the flame reacts strongly and erodes the equipment.\r\nThe energy of the curse permeated the equipment, and he obtained the items stored in the place where the flames were burning."
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": true,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_ParosLibrary": {
+		"_gdeType_Name": "String",
+		"Name": "Paros Vault",
+		"_gdeType_Desc": "String",
+		"Desc": "Check 4 random common skills that have been strengthened for each character, and choose one of them to learn",
+		"_gdeType_Script": "String",
+		"Script": "RE_ParosLibrary",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 0,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"open the forbidden book"
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [
+			"Check and select skills to learn."
+		],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "A huge library owned by the Church of Paros. It seems that the followers of the headmaster come and go every day to study the doctrine.\r\nOld forbidden books that are not handled by the public are stored on the bookshelf.\r\nPerhaps you will be able to read rare books that you cannot even look at in ordinary places.",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"Reading the forbidden book, I was able to remember a powerful skill.\r\nBefore being caught by the librarians, I decided to quickly escape from the library."
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": true,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_Cathedraloflight": {
+		"_gdeType_Name": "String",
+		"Name": "cathedral of light",
+		"_gdeType_Desc": "String",
+		"Desc": "You can check 3 rare Lucy skills and select 1 of them to learn. After that, delete one of the Lucy Rare Skills you have.",
+		"_gdeType_Script": "String",
+		"Script": "RE_Cathedraloflight",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 0,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"open the door and go in"
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [
+			"Learn Lucy's Rare Skill, and forget one Lucy's Rare Skill"
+		],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "A building that radiates divine light.\r\nAt first glance, it looks like a cathedral, but the mass of light is only in the form of a cross.\r\nFrom the inside of the door, you can feel the power of light so powerful that it is creepy.",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"The moment I stepped into the cathedral, the remnants of light pierced my body in an instant.\r\nI realized something flashing, but at the same time I felt like I was missing something.\r\nIt seemed like he would go blind beyond that, so he decided to get out of the church quickly."
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": true,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_ReaperStatue": {
+		"_gdeType_Name": "String",
+		"Name": "Frozen Reaper",
+		"_gdeType_Desc": "String",
+		"Desc": "You can check and learn the random rare skill of each investigator. After that, select 1 rare skill of another investigator and replace it with the sacrificed knowledge.\r\n(However, if the investigator who learned the skill already possesses the rare skill, the existing rare skill of the investigator will be replaced with the sacrificed knowledge.)",
+		"_gdeType_Script": "String",
+		"Script": "RE_ReaperStatue",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 0,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"to pray"
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [
+			"Check and learn the random rare skill of each investigator. After that, select 1 rare skill of another investigator and replace it with the sacrificed knowledge.\nIf the investigator who learned the skill already possesses the rare skill, the existing rare skill of the investigator will be replaced with the sacrificed knowledge."
+		],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "A huge stone statue made in the shape of a Shinigami.\r\nIt is frozen solid in the cold weather, and it emits a chilly air.\r\nIt seems that you will be able to obtain new strength by praying here.",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"When the prayer is over, the laughter of a Shinigami is heard from somewhere.\r\nI have gained a lot of power, but I feel like something is irreversible."
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": 0,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_Holygrail": {
+		"_gdeType_Name": "String",
+		"Name": "Holy Grail of Curse",
+		"_gdeType_Desc": "String",
+		"Desc": "<color=#F53172FF>Unique grade</color> You can put cursed equipment below and choose one of the following.\r\n(You can remove the curse and give <color=#F9D62FFF>Rare Enchant</color>, or you can convert the item you put into a random equipment item of a higher grade.)",
+		"_gdeType_Script": "String",
+		"Script": "RE_Holygrail",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 1,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"dip",
+			"dip deep"
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [
+			"Requires Cursed Equipment of <color=#F53172FF>Unique Grade</color> or lower\nRemoves the curse and gives <color=#F9D62FFF>Rare Enchant</color>",
+			"Requires Cursed Equipment of <color=#F53172FF>Unique Grade</color> or lower\nConverted to a higher tier item"
+		],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "A large chalice filled with holy water that shines brightly.\r\nIt seems to be possible to use holy water to purify the curse of equipment and to enchant it.",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"The curse of the equipment was washed away, and the magic of the Holy Grail began to flow instead.\r\nThe holy water containing the curse was polluted and turned into black tar."
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": 0,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": 0,
+		"_gdeType_EventFieldObject_2Stage": "GameObject",
+		"EventFieldObject_2Stage": "",
+		"_gdeType_EventFieldObject_3Stage": "GameObject",
+		"EventFieldObject_3Stage": "",
+		"_gdeType_MainImage_2Stage": "Sprite",
+		"MainImage_2Stage": "",
+		"_gdeType_MainImage_3Stage": "Sprite",
+		"MainImage_3Stage": "",
+		"_gdeSchema": "RandomEvent"
+	},
+	"RE_StarPillar": {
+		"_gdeType_Name": "String",
+		"Name": "star pillar",
+		"_gdeType_Desc": "String",
+		"Desc": "Acquire items across three floors.\nEach floor demands wealth or luck.\nCelestial can be obtained from the top floor.",
+		"_gdeType_Script": "String",
+		"Script": "RE_StarPillar",
+		"_gdeIsList_UseButton": 1,
+		"_gdeType_UseItemSlot": "Int",
+		"UseItemSlot": 3,
+		"_gdeType_UseButton": "String",
+		"UseButton": [
+			"",
+			""
+		],
+		"_gdeIsList_UseButtonTooltip": 1,
+		"_gdeType_UseButtonTooltip": "String",
+		"UseButtonTooltip": [],
+		"_gdeType_DisableBackButton": "Bool",
+		"_gdeType_EventDetails": "String",
+		"EventDetails": "[The lower part of the Star Pillar]\r\nThe entrance to the tower so high that the top is covered with clouds. You can get potions as loot.\r\nTo go up, you have no choice but to use the dark stairs or to use the elevator at your expense. how will we do it?",
+		"_gdeIsList_OrderStrings": 1,
+		"_gdeType_OrderStrings": "String",
+		"OrderStrings": [
+			"use the stairs",
+			"33% chance to lose 1 random potion you have.",
+			"Use the elevator (250 gold)",
+			"Pay Gold and Climb Safely",
+			"use the stairs",
+			"33% chance to curse all equipment items.",
+			"Use the elevator (350 gold)",
+			"Pay Gold and Climb Safely",
+			"use the stairs",
+			"33% chance to get Lucy Curse Skill Cursed Clock.",
+			"Use the elevator (450 gold)",
+			"Pay Gold and Climb Safely",
+			"[Star Pillar Middle Layer]\nIt seems to have reached exactly the middle floor of the tower.\nAs loot, you can get items that will help you in battle.\r\nIn order to move up, you have no choice but to use the stairs you don't know what might be there, or to use the elevator at the expense of your possessions.\nhow will we do it?",
+			"[Upper part of the Star Pillar]\nI climbed up to the top of the tower.\nIt looks like you can get a rare treasure, Celestial, from the top.\nNot long to go to the top. A cramped staircase or an elevator, which one to use?",
+			"Finally got to the top of the tower.\r\nThe sky is so close here, it's as if you could reach the stars if you stretched out your hand.\r\nHe obtained the Celestial prepared at the top of the tower and returned safely to the ground through the portal.",
+			"While going up the stairs, I made a mistake and almost fell.\nHe barely fell, but it looks like a potion has been thrown out of his bag...",
+			"A curse trap was installed on the stairs.\nThe trap was triggered without even knowing how to escape, and all of the equipment he had was cursed...",
+			"A fascinating clock is placed in the middle of the stairs.\nFor some reason, I feel like I have to take this watch with me.\r\nAs if possessed by something, I picked up the watch and put it in my arms.",
+			"next"
+		],
+		"DisableBackButton": 0,
+		"_gdeType_MainImage": "Sprite",
+		"MainImage": "",
+		"_gdeType_EventFieldObject": "GameObject",
+		"EventFieldObject": "",
+		"_gdeType_RareEvent": "Bool",
+		"RareEvent": 0,
+		"_gdeType_SpecialAppearance": "Bool",
+		"SpecialAppearance": 0,
+		"_gdeType_ItemSlotView": "Bool",
+		"ItemSlotView": true,
 		"_gdeType_EventFieldObject_2Stage": "GameObject",
 		"EventFieldObject_2Stage": "",
 		"_gdeType_EventFieldObject_3Stage": "GameObject",
